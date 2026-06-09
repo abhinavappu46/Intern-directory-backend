@@ -5,7 +5,7 @@ const mongoose=require("mongoose")
 
 
 
-const mongo_Url=process.env.MOGO_URI;
+const mOGO_URI=process.env.MONGO_URI;
 const connectDB= async ()=>{
 
 
@@ -14,7 +14,7 @@ const connectDB= async ()=>{
 try {
 
 
-    mongoose.connect(mongo_Url);
+    await mongoose.connect(mOGO_URI);
     console.log("connected successfully");
     
 } catch (error) {
