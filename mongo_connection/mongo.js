@@ -1,9 +1,11 @@
+require("dotenv").config();
+
 const mongoose=require("mongoose")
 
 
 
 
-const mongo_Url="mongodb://localhost:27017/rshostelHub"
+const mongo_Url=process.env.MOGO_URL;
 const connectDB= async ()=>{
 
 
