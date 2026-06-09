@@ -5,7 +5,7 @@ const mongoose=require("mongoose")
 
 
 
-const mongo_Url=process.env.MOGO_URL;
+const mongo_Url=process.env.MOGO_URI;
 const connectDB= async ()=>{
 
 
