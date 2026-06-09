@@ -24,6 +24,6 @@ app.use("/api",ToggleRoute);
 
 connectDB();
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log("server is runing");
 })
